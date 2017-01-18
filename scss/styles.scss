@@ -1,0 +1,49 @@
+/*
+ * Bootstrap vars
+ */
+$grid-gutter-width: 10px;
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*
+ * Color Pallet
+ */
+$gray: #BBB;
+$light-gray: #DDD;
+$white: #FFF;
+
+
+/*
+ * General layout
+ */
+.wrapper{
+  background-color: $gray;
+}
+
+header, footer{
+  height: 200px;
+
+  h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/*
+ * Standard column
+ */
+.column{
+  background-color: $white;
+  padding: 10px;
+  border: 5px solid $light-gray;
+  min-height: 300px;
+
+  @media (min-width: $screen-md-min){
+    margin-bottom: 10px;
+  }
+}
+
+.half{
+  min-height: 150px;
+}
