@@ -24,9 +24,23 @@ header, footer{
   height: 200px;
 
   h1{
+    background-color: green;
     margin: 0;
     padding: 0;
     text-align: center;
+
+    @media (max-width: 800px) and (min-width: 600px){
+      // background-color: red;
+      display: none;
+    }
+  }
+
+  h2{
+    display: none;
+
+    @media (max-width: 800px){
+      display: block;
+    }
   }
 }
 
@@ -37,13 +51,14 @@ header, footer{
   background-color: $white;
   padding: 10px;
   border: 5px solid $light-gray;
-  min-height: 300px;
 
   @media (min-width: $screen-md-min){
     margin-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
   }
 }
 
 .half{
-  min-height: 150px;
+  height: 150px;
 }
